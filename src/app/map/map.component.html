@@ -1,0 +1,16 @@
+<div [ngStyle]="{'background-image': 'url(../assets/textures/Game.jpg) no-repeat'}">
+<p>
+  map works! {{mapTheme.textures}}
+</p>
+<div class= "emilie" *ngFor="let row of map">
+  <div *ngFor="let case of row">
+    <img [src]="mapTheme.textures[case]" />
+    </div>
+  </div>
+  <style>
+
+
+  
+  </style>
+  <a [routerLink]="['/menu']">menu</a>
+<div>
