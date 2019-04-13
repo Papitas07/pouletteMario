@@ -46,9 +46,30 @@
   width: 400px;
   opacity: .8;
   margin-top: 200px;
- }
+ -webkit-transition: all 200ms ease-in;
+ -webkit-transform: scale(1); 
+ -ms-transition: all 200ms ease-in;
+ -ms-transform: scale(1); 
+ -moz-transition: all 200ms ease-in;
+ -moz-transform: scale(1);
+ transition: all 200ms ease-in;
+ transform: scale(1); 
+  
+}
 
+.buttonBack:hover, .buttonPlay:hover{
+z-index: 2;
+-webkit-transition: all 200ms ease-in;
+-webkit-transform: scale(1.1);
+-ms-transition: all 200ms ease-in;
+-ms-transform: scale(1.1); 
+-moz-transition: all 200ms ease-in;
+-moz-transform: scale(1.1);
+transition: all 200ms ease-in;
+transform: scale(1.1);
+ background-color: #072b6d
 
+}
 .buttonBack{
 margin-left: 2%;
 }  
@@ -59,3 +80,21 @@ margin-left: 2%;
 
         cursor: url('/assets/textures/Obsidian.cur'), pointer;
       }
+
+.walk{
+
+ animation: movement .7s steps(6) infinite;
+background: url('/assets/textures/sprite_course.png');
+        margin-left: 13%;
+        margin-top: 195px;
+        position: absolute;
+        top: 51.5%;
+        width: 53px;
+        height: 45px;
+        
+        }
+@keyframes movement {
+  from {background-position: 0px}
+  to {background-position: -318px}
+          }
+          

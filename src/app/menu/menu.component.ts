@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-menu',
@@ -7,8 +7,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+/* onMouseOver(){
+this.mSpanColor=  "/assets/son/cool.mp3";
+}
 
-  ngOnInit() {
-  }
+onMouseOut(){
+  this.mSpanColor = "black";
+} */
+
+  constructor() {
+   }
+
+   /* @ViewChild('audioOption') audioPlayerRef: ElementRef;
+
+   onAudioPlay() {
+   this.audioPlayerRef.nativeElement.play();
+   } */
+   
+   
+   ngOnInit() {
+/*    this.onAudioPlay();
+ */   }
+
+
 }
